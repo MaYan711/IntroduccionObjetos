@@ -1,3 +1,7 @@
+package src;
+
+import java.util.Scanner;
+
 public class Contador {
 
     private int cont;

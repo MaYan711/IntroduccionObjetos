@@ -8,14 +8,11 @@ public class Circulo {
     private double area;
     private double perimetro;
     
-    //  Constructor
     public Circulo(double radio){
         this.radio = radio;
     }
 
-    /**
-     * Metodos getter y setter variables privadas
-     */
+    
     public void setRadio(double radio){
         this.radio = radio;
     }
@@ -32,9 +29,6 @@ public class Circulo {
         return perimetro;
     }
 
-    /**
-     * Metodos para calcular area y perimetro
-     */
     public void CalcularArea(){
         this.area = (Math.PI)*(this.radio*this.radio);
     }

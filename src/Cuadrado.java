@@ -1,45 +1,52 @@
 package src;
 
-import java.util.*;
 
-public class Circulo {
-     
-    private double radio;
-    private double area;
-    private double perimetro;
-    
-    //  Constructor
-    public Circulo(double radio){
-        this.radio = radio;
+import java.util.Scanner;
+
+public class Cuadrado {
+
+    private int base;
+    private int altura;
+    private int area;
+    private int perimetro;
+
+    public Cuadrado(int base, int altura) {
+        this.base = base;
+        this.altura = altura;
     }
 
-    /**
-     * Metodos getter y setter variables privadas
-     */
-    public void setRadio(double radio){
-        this.radio = radio;
+   
+    public void setBase(int base) {
+        this.base = base;
     }
 
-    public double getRadio(){
-        return radio;
+    public int getBase() {
+        return base;
     }
 
-    public double getArea(){
+    public void setAltura(int altura) {
+        this.altura = altura;
+    }
+
+    public int getAltura() {
+        return altura;
+    }
+
+    public int getArea() {
         return area;
     }
 
-    public double getPerimetro(){
+    public int getPerimetro() {
         return perimetro;
     }
 
-    /**
-     * Metodos para calcular area y perimetro
-     */
-    public void CalcularArea(){
-        this.area = (Math.PI)*(this.radio*this.radio);
+    
+    public void area() {
+        this.area = this.base * this.altura;
     }
 
-    public void CalcularPerimetro(){
-        this.perimetro = (2*3.1416)*(this.radio);
+    public void perimetro() {
+        this.perimetro = this.base + this.altura + this.base + this.altura ;
     }
+
 }
