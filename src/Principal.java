@@ -14,9 +14,9 @@ public Principal() {
         Contador();
         Cuadrado();
         Circulo();
-        //Rectangulo();
-        //Libro();
-        //Fraccion();
+        Rectangulo();
+        Libro();
+        Fraccion();
     }
 
     Scanner sc = new Scanner(System.in);
@@ -53,8 +53,6 @@ public Principal() {
         Contador contador3 = new Contador(contador2);
 
         System.out.println(contador3.getCont());
-
-
 }
 
         public void Circulo(){
@@ -90,16 +88,48 @@ public Principal() {
         System.out.println("El area del cuadrado es: " + cuadrado.getArea());
         System.out.println("El perimetro del cuadrado es: " + cuadrado.getPerimetro());
     }
-
+}
     public void Rectangulo(){
+        Rectangulo rectangulo = new Rectangulo(1, 1);
+        Rectangulo Aux = rectangulo;
+        Aux.area();
+        Aux.perimetro();
+        System.out.println("El area del rectangulo es: " + rectangulo.getArea());
+        System.out.println("El perimetro del rectangulo es: " + rectangulo.getPerimetro());
 
-        Scanner sc = new Scanner(System.in);
+    }
+    public void Libro(){
+        Libro li = new Libro("Venom");
+        Libro li2 = li;
+        li2.setLibro("Humano");
+        li.prestar();
+        li.informacion();
+        li2.devolver();
+        li.informacion();
+}
+public void Fraccion(){
+        System.out.print("Estamos viendo por que no da");
+        //Fraccion n1 = new Fraccion(1,4);
+        //Fraccion d1 = new Fraccion(1,2);
+        //Fraccion n2 = new Fraccion();
+        //Fraccion d2 = new Fraccion(4);
+
+        //Fraccion suma = n1.sumar(n2);
+        //Fraccion resta = n1.resta(d1);
+        //Fraccion multiplicar = n1.multiplicar(d2);
+        //Fraccion dividir = n1.dividir(n2);
+
+        //System.out.println(n1 + " + " + n2 + " = " + suma);
+        //System.out.println(n1 + " - " + n2 + " = " + resta);
+        //System.out.println(n1 + " * " + n2 + " = " + multiplicar);
+       // System.out.println(n1 + " / " + n2 + " = " + dividir);
 
         
 
-    }
 
 }
+
 }
+
 
 
